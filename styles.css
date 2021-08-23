@@ -1,0 +1,233 @@
+nav {
+  padding: 0;
+  border-bottom: 2px blue solid;
+  position: sticky;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  padding-top: 12px;
+}
+
+.container-fluid-content {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-top: 0;
+  max-width: 70%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.row {
+  flex-direction: row;
+  width: 100%;
+}
+p {
+  color: blue;
+  text-decoration: none;
+  font-size: 90px;
+  font-weight: 300;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+.info {
+  margin-right: 30px;
+}
+.about,
+.info {
+  align-items: right;
+  display: inline;
+  z-index: -1;
+  height: 80px;
+  transition: all 200ms ease-in-out;
+  font-weight: 200;
+}
+.about:hover,
+.info:hover {
+  transition-delay: 50ms;
+  color: rgb(43, 255, 0);
+  font-family: "Cormorant Garamond", serif;
+  line-height: 80px;
+}
+.border-blue {
+  border-bottom: 2px blue solid;
+}
+.intro-name,
+.intro {
+  color: blue;
+}
+.intro-name {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 50px;
+  transition: all 200ms ease-in-out;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+}
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+.intro {
+  font-weight: 300;
+  font-size: 22px;
+}
+.project-container {
+  flex-direction: row;
+  display: inline-block;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+h3 {
+  color: blue;
+  padding-top: 20px;
+}
+.project-container:hover {
+  border: blue solid 1px;
+  box-shadow: 2px 2px rgb(43, 255, 0);
+}
+.dictionary-img {
+  padding: 0px;
+}
+.tools {
+  font-size: 13px;
+  display: inline;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: thin solid blue;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.contact {
+  color: blue;
+  font-size: 13px;
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: thin solid blue;
+  border-radius: 50%;
+  justify-content: center;
+  transition: all 100ms ease-in-out;
+}
+.contact:hover {
+  background-color: blue;
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+a .in-touch {
+  text-decoration: none;
+  color: blue;
+}
+.specialties {
+  color: white;
+  text-align: justify;
+  font-size: 22px;
+  text-align: center;
+  display: inline;
+  height: 40px;
+  font-family: "Cormorant Garamond", serif;
+}
+.specialties-line {
+  background-color: blue;
+  justify-content: space-between;
+  height: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.specialties-line:hover {
+  background-color: rgb(43, 255, 0);
+}
+.separator {
+  border-bottom: 1px solid blue;
+}
+.role {
+  margin-bottom: 0px;
+}
+.project-parragraph {
+  font-size: 13px;
+  width: 95%;
+  justify-content: center;
+  padding-top: 20px;
+  margin-right: 0px;
+  text-align: center;
+}
+.profile-description {
+  font-size: 13px;
+  text-align: left;
+  padding-top: 20%;
+}
+.content {
+  width: 90%;
+  justify-content: center;
+  right: 0%;
+}
+.title-profession {
+  font-size: 53px;
+  font-weight: 300;
+  font-family: "Cormorant Garamond", serif;
+}
+.role,
+.date {
+  font-size: 22px;
+}
+.date {
+  text-align: right;
+}
+.city {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h6 {
+  color: blue;
+  margin-bottom: 0;
+}
+footer {
+  align-items: center;
+}
+.footer-text {
+  color: white;
+  background-color: blue;
+  width: 100%;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.footer-text a {
+  text-decoration: none;
+  color: white;
+}
+.footer-text a:hover {
+  color: rgb(43, 255, 0);
+}
