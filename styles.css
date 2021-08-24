@@ -7,7 +7,7 @@ nav {
 .logo {
   max-width: 120px;
   height: auto;
-  padding-top: 12px;
+  padding-top: 4px;
 }
 
 .container-fluid-content {
@@ -28,7 +28,7 @@ nav {
 p {
   color: blue;
   text-decoration: none;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 300;
 }
 
@@ -44,13 +44,11 @@ p {
   display: inline;
   z-index: -1;
   height: 80px;
-  transition: all 200ms ease-in-out;
+
   font-weight: 200;
 }
 .about:hover,
 .info:hover {
-  transition-delay: 50ms;
-  color: rgb(43, 255, 0);
   font-family: "Cormorant Garamond", serif;
   line-height: 80px;
 }
@@ -116,10 +114,14 @@ h3 {
   text-align: center;
   justify-content: center;
 }
+.about-container {
+  padding-top: 48;
+  padding-bottom: 48;
+}
 .contact {
-  color: blue;
   font-size: 13px;
   display: block;
+  margin-top: 16px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -146,7 +148,6 @@ a .in-touch {
   text-align: center;
   display: inline;
   height: 40px;
-  font-family: "Cormorant Garamond", serif;
 }
 .specialties-line {
   background-color: blue;
@@ -160,6 +161,7 @@ a .in-touch {
 }
 .separator {
   border-bottom: 1px solid blue;
+  margin: 0px;
 }
 .role {
   margin-bottom: 0px;
@@ -178,14 +180,22 @@ a .in-touch {
   padding-top: 20%;
 }
 .content {
-  width: 90%;
+  width: 100%;
   justify-content: center;
-  right: 0%;
+  margin: 0px;
+}
+.about-container {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .title-profession {
-  font-size: 53px;
-  font-weight: 300;
-  font-family: "Cormorant Garamond", serif;
+  font-size: 43px;
+  font-weight: 500;
+  width: 100%;
+  margin: 0;
+  left: 10;
+  height: auto;
 }
 .role,
 .date {
@@ -193,6 +203,9 @@ a .in-touch {
 }
 .date {
   text-align: right;
+}
+.dates {
+  top: 0px;
 }
 .city {
   font-size: 16px;
@@ -230,4 +243,207 @@ footer {
 }
 .footer-text a:hover {
   color: rgb(43, 255, 0);
+}
+
+@media (max-width: 500px) {
+  .container-fluid-content {
+    max-width: 90%;
+    padding-left: 12px;
+  }
+  .container-fluid {
+    height: auto;
+    width: 100%;
+  }
+  .logo {
+    max-width: 60px;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 6px;
+  }
+  .clickable-links {
+    padding-top: 16px;
+  }
+  p {
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .info {
+    margin-right: 10px;
+  }
+  .intro-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .mobile-header {
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+  }
+  .project-container {
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid blue;
+  }
+  .mobile-adjustments {
+    margin-top: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .project-parragraph {
+    margin-bottom: 0px;
+  }
+
+  .portfolio {
+    margin-bottom: 0px;
+  }
+  .profile-image {
+    display: none;
+  }
+  .contact {
+    margin-bottom: 10px;
+  }
+  .about-container {
+    margin-right: 0px;
+  }
+  .profile-description {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .title-profession {
+    font-size: 30px;
+    width: 400px;
+  }
+  .specialties {
+    text-align: center;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    background-color: blue;
+  }
+  .specialties-line {
+    display: none;
+  }
+  .especialidad {
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    font-weight: 500px;
+  }
+  .especialidad-fe {
+    border-radius: 0px 50px 0px 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .especialidad-id {
+    border-radius: 30px 0px 30px 0px;
+    text-align: end;
+    margin-left: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .especialidad-qx {
+    border-radius: 0px 50px 0px 50px;
+    margin-left: 56px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .especialidad-dt {
+    border-radius: 0px 0px 50px 50px;
+    margin-left: 107px;
+    padding-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 20px;
+  }
+  .especialidad-pd {
+    border-radius: 170px 170px 0px 0px;
+    margin-left: 87px;
+    padding-top: 25px;
+    padding-left: 14px;
+    padding-right: 20px;
+  }
+  .especialidad-pm {
+    border-radius: 0px 0px 0px 50px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 87px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .especialidad-s {
+    border-radius: 0px 50px 50px 50px;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-left: 197px;
+    padding-bottom: 15px;
+  }
+
+  .mobile-cv {
+    margin-left: 20px;
+  }
+  .date {
+    transform: rotate(-90deg);
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    justify-content: flex-end;
+  }
+
+  .separator {
+    flex-direction: row;
+  }
+  .dtt {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 93px;
+  }
+
+  .creative-researcher {
+    padding-top: 51px;
+    padding-right: 14px;
+  }
+  .qr {
+    padding-top: 53px;
+    width: 100px;
+    padding-right: 14px;
+    text-align: center;
+  }
+  .mwa {
+    padding-right: 47px;
+    padding-top: 11px;
+  }
+  .rt {
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+  .fe {
+    margin-bottom: 0px;
+    padding-top: 72px;
+    padding-right: 5px;
+  }
+  .id {
+    padding-top: 45px;
+    padding-right: 30px;
+  }
+  .aa {
+    margin-bottom: 0px;
+    padding-top: 44px;
+    padding-right: 27px;
+  }
+  footer {
+    display: none;
+  }
 }

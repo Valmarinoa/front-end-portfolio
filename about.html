@@ -23,7 +23,7 @@
     />
   </head>
   <body>
-    <div class="container-fluid pb-2">
+    <div class="container-fluid justify-content-center pb-2">
       <nav class="d-flex justify-content-between">
         <a href="./index.html" class="nav-links"
           ><img src="./media/logo-azul.gif" class="logo"
@@ -37,62 +37,93 @@
       </nav>
     </div>
     <div class="container-fluid">
-      <div class="row d-flex justify-content-evenly pb-5">
-        <div class="col-auto text-center">
+      <div class="row d-flex border-blue justify-content-center m-0">
+        <div class="col-auto mobile-header text-center">
           <p class="intro mb-0">Hi! I'm</p>
           <p class="intro-name mb-1"><i>Valentina Marino</i></p>
           <p class="intro">
             <strong> Front-End Developer</strong> based in Amsterdam.
           </p>
         </div>
-        <div class="row d-flex justify-content-center pt-5 pb-5">
-          <div class="col-4">
-            <img
-              src="./media/profile-sea.png"
-              class="img-fluid profile-image center"
-            />
-          </div>
-          <div class="col-3">
-            <h3 class="contact text-center mt-3">valenmarinocol@gmail.com</h3>
-            <h3 class="contact text-center mt-3">GitHub</h3>
-            <h3 class="contact text-center mt-3">LinkedIn</h3>
+      </div>
+      <div class="row d-flex justify-content-center about-container m-0">
+        <div class="col-sm-4">
+          <img
+            src="./media/profile-sea.png"
+            class="img-fluid profile-image center"
+          />
+        </div>
+        <div class="col-sm-3">
+          <h3 class="contact text-center">valenmarinocol@gmail.com</h3>
+          <h3 class="contact text-center">GitHub</h3>
+          <h3 class="contact text-center">LinkedIn</h3>
 
-            <p class="profile-description">
-              I'm a multidisciplinary designer who's in love with coding.
-              Through my work I attempt to make the world a little more human,
-              bringing the ‘magical realism’ narrative to a meeting point with
-              technology. I am fascinated about creating unusual interactions
-              between ordinary objects and their environment, and give the
-              sensation that everything is alive. I am driven by a keen desire
-              to contribute to society, and there’s so much to do.
-              <br /><br /><br />Let's stay
-              <a href="mailto:valenmarinocol@gmail.com"
-                ><strong class="in-touch"> in touch!</strong>
-              </a>
-            </p>
-          </div>
+          <p class="profile-description">
+            I'm a multidisciplinary designer who's in love with coding. Through
+            my work I attempt to make the world a little more human, bringing
+            the ‘magical realism’ narrative to a meeting point with technology.
+            I am fascinated about creating unusual interactions between ordinary
+            objects and their environment. I am driven by a keen desire to
+            contribute to society, and there’s so much to do.
+            <br /><br /><br />Let's stay
+            <a href="mailto:valenmarinocol@gmail.com"
+              ><strong class="in-touch"> in touch!</strong>
+            </a>
+          </p>
         </div>
       </div>
-      <div class="d-flex specialties-line">
-        <p class="specialties ps-4">Front-End Development</p>
-        <p class="specialties">Interaction Design</p>
-        <p class="specialties">Qualitative Research</p>
-        <p class="specialties">Design Thinking</p>
-        <p class="specialties">Product Development</p>
-        <p class="specialties">Project Management</p>
-        <p class="specialties pe-4">Storytelling</p>
+    </div>
+    <div class="container-fluid d-none d-sm-block">
+      <div class="row d-flex specialties-line">
+        <div class="col-sm-auto">
+          <p class="specialties ps-4">Front-End Development</p>
+
+          <p class="specialties">Interaction Design</p>
+          <p class="specialties">Qualitative Research</p>
+          <p class="specialties">Design Thinking</p>
+          <p class="specialties">Product Development</p>
+          <p class="specialties">Project Management</p>
+          <p class="specialties pe-4">Storytelling</p>
+        </div>
       </div>
     </div>
+    <div class="container-fluid d-block d-sm-none">
+      <div class="row ps-1 d-flex justify-content-center m-0">
+        <div class="col-sm-auto">
+          <p class="text-center especialidad especialidad-fe">
+            Front-End Development
+          </p>
+          <p class="text-center especialidad especialidad-id">
+            Interaction Design
+          </p>
+          <p class="text-center especialidad especialidad-qx">
+            Qualitative Research
+          </p>
+          <p class="text-center especialidad especialidad-dt">
+            Design Thinking
+          </p>
+          <p class="text-center especialidad especialidad-pd">
+            Product Development
+          </p>
+          <p class="text-center especialidad especialidad-pm">
+            Project Management
+          </p>
+          <p class="text-center especialidad especialidad-s">Storytelling</p>
+        </div>
+      </div>
+    </div>
+
     <div
       class="
         container-fluid container-fluid-content
         vertical-center
         my-auto
         justify-content-center
+        mobile-cv
       "
     >
-      <div class="row d-flex m-0 pt-4">
-        <div class="col-auto section-profession ps-0">
+      <div class="row d-flex content section-profession pt-5 pl-0">
+        <div class="col section-profession ps-0">
           <p class="title-profession">Professional Experience</p>
         </div>
       </div>
@@ -102,28 +133,29 @@
           <h6>Digital Society School</h6>
           <p class="city">Amsterdam</p>
         </div>
-        <div class="col text-right dates p-0 me-0">
-          <p class="date">January 2021</p>
+
+        <div class="col text-right p-0 me-0">
+          <p class="date dtt">Jan 2021</p>
         </div>
       </div>
       <div class="row d-flex content separator pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Creative Researcher</p>
           <h6>Random Studio</h6>
           <p class="city">Amsterdam</p>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">January - October 2020</p>
+        <div class="col text-right p-0">
+          <p class="date creative-researcher">Jan - Oct 2020</p>
         </div>
       </div>
       <div class="row d-flex content pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Qualitative UX Researcher</p>
           <h6>Signify (Philips Lighting)</h6>
           <p class="city">Eindhoven</p>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">July 2018 - April 2019</p>
+        <div class="col text-right p-0">
+          <p class="date qr">Jul 2018 - Apr 2019</p>
         </div>
       </div>
       <div class="row d-flex content section-profession pt-5 pl-0">
@@ -132,21 +164,21 @@
         </div>
       </div>
       <div class="row d-flex content separator pt-3 pb-3">
-        <div class="col profession ps-0">
+        <div class="col-auto profession ps-0 pe-0">
           <p class="role">Melkweg Design Awards</p>
           <h6>Dutch Desing Week</h6>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">2019</p>
+        <div class="col text-right p-0">
+          <p class="date mwa">2019</p>
         </div>
       </div>
       <div class="row d-flex content pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Rare Talents Scholarship</p>
           <h6>Design Academy Eindhoven</h6>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">2015 - 2019</p>
+        <div class="col text-right p-0">
+          <p class="date rt">2015 - 2019</p>
         </div>
       </div>
       <div class="row d-flex content section-profession pt-5 ps-0">
@@ -155,33 +187,33 @@
         </div>
       </div>
       <div class="row d-flex content separator pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Front-End & React Development</p>
           <h6>SheCodes | Bootcamp</h6>
           <p class="city">Amsterdam</p>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">November 2020 - Present</p>
+        <div class="col text-right p-0">
+          <p class="date fe">Nov 2020 - Present</p>
         </div>
       </div>
       <div class="row d-flex content separator pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Industrial Design</p>
           <h6>Design Academy Eindhoven | Bachelor</h6>
           <p class="city">Eindhoven</p>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">2015 - 2019</p>
+        <div class="col text-right p-0">
+          <p class="date id">2015 - 2019</p>
         </div>
       </div>
       <div class="row d-flex content pt-3 pb-3">
-        <div class="col profession p-0">
+        <div class="col-auto profession p-0">
           <p class="role">Applied Arts</p>
           <h6>Haute École des Arts du Rhin | Bachelor</h6>
           <p class="city">Strasbourg</p>
         </div>
-        <div class="col text-right dates p-0">
-          <p class="date">2013 - 2015</p>
+        <div class="col text-right p-0">
+          <p class="date aa">2013 - 2015</p>
         </div>
       </div>
     </div>
