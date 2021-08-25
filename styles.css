@@ -2,6 +2,11 @@ nav {
   padding: 0;
   border-bottom: 2px blue solid;
 }
+:root {
+  --has-animation-logo: scaleX(0.750977) scaleY(0.750977);
+  --has-animation-content: scaleX(1.1) scaleY(1.1);
+  --transition-animation: all 100ms ease-in-out;
+}
 .fixed-top {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -18,9 +23,11 @@ nav {
   transition: all 300ms ease-in-out;
 }
 .logo:hover {
+  transform: var(--has-animation-logo);
+}
+.has-animation {
   transform: scaleX(0.750977) scaleY(0.750977);
 }
-
 .container-fluid-content {
   justify-content: center;
   flex-direction: column;
@@ -66,7 +73,6 @@ p {
 .about:hover,
 .info:hover {
   font-family: "Cormorant Garamond", serif;
-  line-height: 80px;
 }
 .border-blue {
   border-bottom: 2px blue solid;
@@ -82,15 +88,15 @@ p {
   line-height: 50px;
   transition: all 200ms ease-in-out;
   animation: skew 3s infinite;
-  transform: skew(20deg);
+  transform: skew(40deg);
   animation-direction: alternate;
 }
 @keyframes skew {
   0% {
-    transform: skewX(20deg);
+    transform: skewX(40deg);
   }
   100% {
-    transform: skewX(-20deg);
+    transform: skewX(-40deg);
   }
 }
 .intro {
@@ -100,47 +106,71 @@ p {
 .project-container {
   flex-direction: row;
   display: inline-block;
-  margin-top: 7%;
+  margin-top: 5%;
   margin-bottom: 7%;
+  margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 20px;
   vertical-align: middle;
   border: none;
-  transition: all 300ms ease-in-out;
+  height: fit-content;
+  transition: var(--transition-animation);
 }
 h3 {
   color: blue;
   padding-top: 20px;
 }
 .project-container:hover {
-  border: blue solid 1px;
-  box-shadow: 2px 2px rgb(43, 255, 0);
+  border: solid 2px blue;
+  border-left: 6px solid blue;
+  border-right: 6px solid blue;
 }
+
 .dictionary-img {
   padding: 0px;
+  vertical-align: auto;
+  z-index: -3;
 }
+
 .tools {
   font-size: 13px;
   display: inline;
-  padding-right: 20px;
-  padding-left: 20px;
+
   padding-top: 5px;
   padding-bottom: 5px;
-  border: thin solid blue;
-  border-radius: 50%;
   text-align: center;
-  justify-content: center;
 }
+
 .about-container {
   padding-top: 48;
   padding-bottom: 48;
+  border-bottom: none;
+}
+.visit-link {
+  padding-top: 10px;
+  border: solid 1px blue;
+  padding: 10px;
+  color: blue;
+  border-radius: 50%;
+  box-shadow: 5px 3px 3px 1px blue;
+  transition: var(--transition-animation);
+}
+.visit-link:hover {
+  color: white;
+  background-color: blue;
+  transform: var(--has-animation-content);
+}
+.contact-link,
+.visit-link {
+  text-decoration: none;
 }
 .contact {
-  font-size: 13px;
+  font-size: 20px;
   display: block;
-  margin-top: 16px;
+  margin-top: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-bottom: 5px;
   border: thin solid blue;
   border-radius: 50%;
@@ -158,21 +188,51 @@ a .in-touch {
   text-decoration: none;
   color: blue;
 }
+.star {
+  display: inline-block;
+  margin-left: 30px;
+  background: blue;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  text-align: center;
+}
+.star:before,
+.star:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: blue;
+}
+.star:before {
+  transform: rotate(30deg);
+}
+.star:after {
+  transform: rotate(60deg);
+}
 .specialties {
-  color: blue;
+  margin-bottom: 40px;
+  color: white;
+  background: blue;
   font-size: 22px;
   display: inline;
   height: fit-content;
   font-weight: 500;
+  transition: all 200ms ease-in-out;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
 }
-.specialties-line {
-  height: fit-content;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
 }
 
 .separator {
@@ -188,10 +248,11 @@ a .in-touch {
   justify-content: center;
   padding-top: 20px;
   margin-right: 0px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .profile-description {
-  font-size: 13px;
+  font-size: 20px;
   text-align: left;
   padding-top: 20%;
 }
@@ -204,6 +265,12 @@ a .in-touch {
   margin-bottom: 40px;
   padding-bottom: 40px;
   padding-top: 40px;
+}
+.profession {
+  transition: all 100ms ease-in-out;
+}
+.profession:hover {
+  transform: var(--has-animation-content);
 }
 .title-profession {
   font-size: 43px;
@@ -264,6 +331,18 @@ footer {
   color: rgb(43, 255, 0);
 }
 
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  height: 26px;
+  width: 26px;
+  background-color: rgb(251, 255, 8);
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 500px) {
   .container-fluid-content {
     max-width: 90%;
@@ -274,7 +353,7 @@ footer {
     width: 100%;
   }
   .header {
-    margin-top: 12%;
+    margin-top: 20%;
   }
   .logo {
     max-width: 60px;
@@ -288,8 +367,12 @@ footer {
   p {
     color: blue;
     text-decoration: none;
-    font-size: 250px;
+    font-size: 50px;
     font-weight: 300;
+  }
+  .info,
+  .about {
+    font-size: 30px;
   }
   .info {
     margin-right: 10px;
@@ -306,6 +389,8 @@ footer {
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .mobile-adjustments {
     margin-top: 0px;
@@ -313,25 +398,41 @@ footer {
     padding-top: 30px;
   }
   .project-parragraph {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   .portfolio {
     margin-bottom: 0px;
   }
+  .profile-description {
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
   .profile-image {
     display: none;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
   }
   .contact {
     margin-bottom: 10px;
   }
+
   .about-container {
     margin-right: 0px;
+    padding: 0px;
   }
   .profile-description {
     padding-top: 20px;
     text-align: center;
+    font-size: 16px;
   }
+  .expertise {
+    height: 60px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
   .title-profession {
     font-size: 30px;
     width: 400px;
@@ -405,6 +506,7 @@ footer {
     border-radius: 0px 50px 50px 50px;
     padding-left: 21px;
     padding-right: 21px;
+    padding-top: 10px;
     margin-left: 197px;
     padding-bottom: 15px;
   }
@@ -475,6 +577,12 @@ footer {
   .info,
   .about {
     font-size: 30px;
+  }
+  .project-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
