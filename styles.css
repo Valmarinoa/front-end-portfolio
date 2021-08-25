@@ -153,12 +153,12 @@ h3 {
   color: blue;
   border-radius: 50%;
   box-shadow: 5px 3px 3px 1px blue;
-  transition: var(--transition-animation);
+  transition: all 100ms ease-in-out;
 }
 .visit-link:hover {
   color: white;
   background-color: blue;
-  transform: var(--has-animation-content);
+  transform: scaleX(1.1) scaleY(1.1);
 }
 .contact-link,
 .visit-link {
@@ -188,31 +188,7 @@ a .in-touch {
   text-decoration: none;
   color: blue;
 }
-.star {
-  display: inline-block;
-  margin-left: 30px;
-  background: blue;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  text-align: center;
-}
-.star:before,
-.star:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background: blue;
-}
-.star:before {
-  transform: rotate(30deg);
-}
-.star:after {
-  transform: rotate(60deg);
-}
+
 .specialties {
   margin-bottom: 40px;
   color: white;
@@ -340,7 +316,7 @@ div.cursors div {
   left: 300px;
   height: 26px;
   width: 26px;
-  background-color: rgb(251, 255, 8);
+  background-color: rgb(0, 255, 0);
   border-radius: 50%;
   z-index: 10000;
   pointer-events: none;
