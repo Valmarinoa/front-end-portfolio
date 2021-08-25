@@ -331,6 +331,9 @@ footer {
   color: rgb(43, 255, 0);
 }
 
+.cursors {
+  height: 0px;
+}
 div.cursors div {
   position: absolute;
   top: 300px;
@@ -594,5 +597,11 @@ div.cursors div {
 @media (width: 1024px) {
   .header {
     margin-top: 13%;
+  }
+  .visit-link {
+    font-size: 13px;
+  }
+  .project-container {
+    height: fit-content;
   }
 }
