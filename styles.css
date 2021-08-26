@@ -232,7 +232,7 @@ a .in-touch {
 .profile-description {
   font-size: 20px;
   text-align: left;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 .content {
   width: 100%;
@@ -392,8 +392,6 @@ div.cursors div {
   }
   .profile-image {
     display: none;
-    text-align: right;
-
     max-width: 80%;
     height: auto;
     padding-top: auto;
