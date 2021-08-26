@@ -12,9 +12,9 @@ nav {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
 }
-.header {
+/*.header {
   margin-top: 9%;
-}
+}*/
 
 .logo {
   max-width: 120px;
@@ -103,6 +103,7 @@ p {
   font-weight: 300;
   font-size: 22px;
 }
+
 .project-container {
   flex-direction: row;
   display: inline-block;
@@ -119,6 +120,7 @@ p {
 h3 {
   color: blue;
   padding-top: 20px;
+  font-size: 1.65rem;
 }
 .project-container:hover {
   border: solid 2px blue;
@@ -331,9 +333,7 @@ div.cursors div {
     height: auto;
     width: 100%;
   }
-  .header {
-    margin-top: 20%;
-  }
+
   .logo {
     max-width: 60px;
     height: auto;
@@ -368,8 +368,8 @@ div.cursors div {
     margin-top: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid blue;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .mobile-adjustments {
     margin-top: 0px;
@@ -382,7 +382,9 @@ div.cursors div {
   }
 
   .portfolio {
-    margin-bottom: 0px;
+    vertical-align: top;
+    margin: auto;
+    height: fit-content;
   }
   .profile-description {
     font-size: 18px;
@@ -391,12 +393,13 @@ div.cursors div {
   .profile-image {
     display: none;
     text-align: right;
-    top: 50%;
-    left: 50%;
-    max-width: 500px;
+
+    max-width: 80%;
     height: auto;
     padding-top: auto;
     padding-bottom: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .contact {
     margin-bottom: 10px;
@@ -554,11 +557,6 @@ div.cursors div {
 }
 
 @media (width: 375px) {
-  .header {
-    margin-top: 23%;
-    width: 100%;
-  }
-
   .info,
   .about {
     font-size: 30px;
@@ -572,14 +570,11 @@ div.cursors div {
 }
 
 @media (width: 768px) {
-  .header {
-    margin-top: 17%;
+  .vanilla {
+    margin-top: 20px;
   }
 }
 @media (width: 1024px) {
-  .header {
-    margin-top: 13%;
-  }
   .visit-link {
     font-size: 13px;
   }
@@ -588,5 +583,9 @@ div.cursors div {
   }
   .project-container {
     height: fit-content;
+  }
+  .profile-image {
+    max-width: 350px;
+    height: auto;
   }
 }
