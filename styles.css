@@ -198,7 +198,9 @@ a .in-touch {
   font-size: 22px;
   display: inline;
   height: fit-content;
-  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
   transition: all 200ms ease-in-out;
   animation: skew 3s infinite;
   transform: skew(20deg);
